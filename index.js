@@ -169,3 +169,17 @@ const catsData = [
         alt: "A cat looking sad",
     },
 ]
+
+// Function to extract all unique emotions from the array of cat objects
+function getEmotionsArray(cats){
+    const emotionsArray = [] // Initialize an empty array for emotions
+    for (let i = 0; i < cats.length; i++){ // Loop through each cat object
+        for (let j=0; j < cats[i].emotionTags.length; j++){ // Loop through each emotion tag
+                emotionsArray.push(cats[i].emotionTags[j]) // Add emotion to the array
+
+        }
+    }
+console.log(emotionsArray)
+}
+
+getEmotionsArray(catsData)
