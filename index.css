@@ -47,7 +47,75 @@ header {
 /* Main controls container */
 .controls-container {
     display: flex; 
-    flex-direction: column; /* Stack children vertically */
-    width: 200px; /* Fixed width for form controls */
-    margin: 0px auto; /* Center horizontally */
+    flex-direction: column; 
+    width: 200px; 
+    margin: 0px auto; 
+}
+
+/* FORM CONTROL STYLES */
+
+/* Emotion radio buttons container */
+.emotion-radios {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #bcbcbc; 
+    border-radius: 5px; 
+}
+
+/* Individual radio button container */
+.radio {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bcbcbc; 
+    padding: 4px 8px; 
+}
+
+/* Radio button label styling */
+label {
+    font-size: 14px; 
+    padding: 3px; 
+    width: 100%; 
+    cursor: pointer; 
+}
+
+/* Highlight state for selected radio */
+.highlight {
+    background-color: #fff0ee; 
+    color: #bd301d; 
+    font-weight: bold; 
+}
+
+/* Remove border from last radio option */
+.radio:last-child {
+    border-bottom: 0; 
+}
+
+/* Radio input styling */
+input[type="radio"] {
+    cursor: pointer; 
+}
+
+/* GIF toggle checkbox container */
+.gifs-check {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 16px; 
+}
+
+/* GIF checkbox label override */
+.gifs-check-label {
+    width: unset; 
+    margin-right: 5px; 
+}
+
+/* Generate image button */
+.get-image-btn {
+    background-color: #67595e; 
+    color: #eed6d3; 
+    padding: 15px 19px; 
+    font-size: 24px; 
+    border: none; 
+    border-radius: 5px; 
+    margin-bottom: 8px; 
 }
