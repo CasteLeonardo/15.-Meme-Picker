@@ -43,3 +43,11 @@ header {
 .pumpkin-img {
     width: 80px; 
 }
+
+/* Main controls container */
+.controls-container {
+    display: flex; 
+    flex-direction: column; /* Stack children vertically */
+    width: 200px; /* Fixed width for form controls */
+    margin: 0px auto; /* Center horizontally */
+}
